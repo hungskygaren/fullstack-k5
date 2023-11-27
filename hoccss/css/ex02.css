@@ -1,0 +1,43 @@
+/* #title {
+  color: blue;
+}
+.title {
+  color: brown;
+}
+h2 {
+  color: blueviolet;
+} */
+/* .content {
+  color: aquamarine;
+}
+.main h2 {
+  color: burlywood;
+} */
+/* .products {
+  color: chocolate;
+}
+.content > h2 {
+  color: red;
+}
+.content div h2 {
+  color: aqua;
+}
+.products .title {
+  color: green;
+} */
+.box p ~ ul {
+  color: rgb(50, 4, 231);
+}
+.box p ~ div ul {
+  color: aqua;
+}
+.products {
+  color: blue;
+}
+.products .title {
+  color: red;
+}
+.h2,
+.p {
+  color: blueviolet;
+}

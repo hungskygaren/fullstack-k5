@@ -1,0 +1,18 @@
+/* h1 {
+  color: rgb(7, 195, 195);
+}
+h2 {
+  color: cadetblue;
+} */
+.products {
+  color: aqua;
+}
+.products h2 {
+  color: black;
+}
+.products .title #feature {
+  color: rgb(47, 255, 0);
+}
+.products div div h2 {
+  color: red;
+}

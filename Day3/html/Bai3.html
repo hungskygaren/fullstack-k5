@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai3</title>
+    <link rel="stylesheet" href="../css/Bai3.css" />
+  </head>
+  <body>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="text" name="password" />
+      </div>
+      <div>
+        <label for="city">City of Employment:</label>
+        <input type="text" name="city" />
+      </div>
+      <div>
+        <label for="web">Web server:</label>
+        <select name="web">
+          <option value="" selected>---Chosse a server---</option>
+          <option value="1">A</option>
+        </select>
+      </div>
+      <div class="role">
+        <label>Please specify your role:</label>
+
+        <div class="role-list">
+          <label><input type="radio" />Admin</label>
+          <label><input type="radio" />Engineer</label>
+          <label><input type="radio" />Manage</label>
+          <label><input type="radio" />Guest</label>
+        </div>
+      </div>
+      <div class="sign">
+        <label>Single Sign-on to the following</label>
+        <div class="sign-list">
+          <label><input type="checkbox" />Mail</label>
+          <label><input type="checkbox" />Payroll</label>
+          <label><input type="checkbox" />Self-service</label>
+        </div>
+      </div>
+      <input class="submit" type="submit" value="Login" />
+      <input class="reset" type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
