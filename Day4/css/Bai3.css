@@ -1,0 +1,97 @@
+div {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border: none;
+}
+
+button:focus {
+  color: white;
+  background: #29378e;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.list {
+  margin-top: 50px;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+.active {
+  color: orange;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-img:last-child {
+  display: none;
+}
+
+.item:hover .item-img:first-child {
+  display: none;
+}
+
+.item:hover .item-img:last-child {
+  display: inline;
+}
+
+.item-hoverd {
+  position: relative;
+}
+
+.control {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.item:hover .control {
+  display: inline;
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.control-row i {
+  padding: 21px;
+  color: white;
+  background: #1b2981;
+}
+
+.control-btn {
+  margin-top: 10px;
+  width: 196px;
+  padding: 21px;
+  color: white;
+  background: #1b2981;
+}
+
+.stars {
+  margin-top: 50px;
+}
+
+span {
+  font-weight: 900;
+}

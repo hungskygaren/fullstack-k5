@@ -1,0 +1,29 @@
+/* Cấu trúc chọn phần tử giả:  
+selector::tenphantu
+1.before after
+2.first-letter --> Chọn ký tự đầu tiên
+3. first-line  chọn dòng đầu tiên
+4.selection  chọn văn bản bôi đen
+*/
+/* .title::before {
+  content: "a";
+}
+.title::after {
+  content: "b";
+} */
+.content p::first-letter {
+  color: red;
+}
+.content p::first-line {
+  color: rgb(224, 228, 20);
+}
+.content p::selection {
+  color: rgb(224, 228, 20);
+  background: rgb(69, 79, 50);
+}
+.name {
+  color: red;
+}
+.name::placeholder {
+  color: green;
+}
