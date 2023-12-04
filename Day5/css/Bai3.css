@@ -1,0 +1,71 @@
+html {
+  font-size: 10px;
+}
+.services {
+  width: 80%;
+  text-align: center;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.head {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.head ~ p {
+  font-size: 1.7rem;
+  margin-bottom: 10rem;
+  color: #abadb4;
+}
+
+.list-services {
+  display: flex;
+  justify-content: space-between;
+  width: 100rem;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.item {
+  width: 28%;
+  box-shadow: 0px 0px 4px 2px #d8d8d8;
+  padding: 2.5rem 1.5rem;
+}
+
+.item-icon {
+  width: 12rem;
+  height: 12rem;
+  line-height: 12rem;
+  font-size: 3.5rem;
+  color: #f3a32d;
+  border: 3px solid #f3a32d;
+  border-radius: 100%;
+}
+
+.item-name {
+  font-size: 2rem;
+}
+
+.item-desc {
+  font-size: 1.5rem;
+  color: #abadb4;
+  margin-bottom: 5rem;
+  text-align: justify;
+}
+
+.item-link {
+  margin: auto;
+  width: 14rem;
+  height: 5rem;
+  background-color: #f2a93b;
+}
+
+.item-link a {
+  width: 100%;
+  height: 100%;
+  line-height: 5rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
