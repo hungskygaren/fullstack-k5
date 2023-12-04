@@ -1,0 +1,50 @@
+label {
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 5px;
+}
+
+.fa-plus,
+.fa-minus {
+  width: 55px;
+  text-align: center;
+}
+.minus-1,
+.minus-2,
+.minus-3 {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+#checkbox-1 ~ label,
+#checkbox-2 ~ label,
+#checkbox-3 ~ label {
+  display: block;
+  background-color: #d95824;
+  width: 100%;
+}
+p {
+  padding: 0 30px 0 30px;
+  display: none;
+}
+input[id="checkbox-1"]:checked ~ label .plus-1,
+input[id="checkbox-2"]:checked ~ label .plus-2,
+input[id="checkbox-3"]:checked ~ label .plus-3 {
+  display: none;
+}
+
+input[id="checkbox-1"]:checked ~ label .minus-1,
+input[id="checkbox-2"]:checked ~ label .minus-2,
+input[id="checkbox-3"]:checked ~ label .minus-3 {
+  display: inline-block;
+}
+
+input[id="checkbox-1"]:checked ~ p,
+input[id="checkbox-2"]:checked ~ p,
+input[id="checkbox-3"]:checked ~ p {
+  display: block;
+}
