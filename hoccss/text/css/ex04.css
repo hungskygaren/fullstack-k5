@@ -1,0 +1,19 @@
+body {
+  /* letter-spacing: 5px; */
+  /* word-spacing: 1rem; */
+  /* line-height: 2; */
+  /* 
+  text-decoration: none line-through overline underline; */
+  /* text-transform: capitalize; */
+  font-size: 18px;
+  /* text-indent: 100px; */
+  /* word-wrap: break-word; */
+  /* word-break: break-all; */
+  /* white-space: normal; */
+  text-align: justify;
+}
+
+label {
+  display: block;
+  text-align: center;
+}

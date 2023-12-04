@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/Bai1.css" />
+  </head>
+  <body>
+    <div class="contact">
+      <h2 class="head">Hey there</h2>
+      <p>
+        <span>We'd like to hear from you.</span> Send us your message or just
+        say hi with our contact form or directly via phone, we love to chat
+      </p>
+      <form action="" class="contact-form">
+        <div class="contact-form-item name-item">
+          <input
+            type="text"
+            id="your-name"
+            class="contact-input"
+            placeholder="Your name"
+          />
+          <label for="your-name"></label>
+          <span class="left-icon">
+            <i class="fa-solid fa-user-tie icon"></i>
+          </span>
+          <span class="right-icon">
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="x-icon">
+            <i class="fa-solid fa-x"></i>
+          </span>
+        </div>
+        <div class="contact-form-item email-item">
+          <input
+            type="text"
+            id="your-email"
+            class="contact-input"
+            placeholder="your@domain.com"
+          />
+          <label for="your-email"></label>
+          <span class="left-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <span class="right-icon">
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="x-icon">
+            <i class="fa-solid fa-x"></i>
+          </span>
+        </div>
+        <div class="contact-form-item numbers-item">
+          <input
+            type="text"
+            id="your-numbers"
+            class="contact-input"
+            placeholder="+44 00 123"
+          />
+          <label for="your-numbers"></label>
+          <span class="left-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </span>
+          <span class="right-icon">
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="x-icon">
+            <i class="fa-solid fa-x"></i>
+          </span>
+        </div>
+        <div class="contact-form-item subject-item">
+          <select name="subject" id="your-subject" class="contact-input">
+            <option value="0">subject</option>
+            <option value="1">subject1</option>
+            <option value="2">subject2</option>
+          </select>
+          <label for="your-subject"></label>
+          <span class="left-icon">
+            <i class="fa-solid fa-folder-open"></i>
+          </span>
+        </div>
+        <div style="height: 20rem" class="contact-form-item message-item">
+          <textarea
+            class="contact-input"
+            name="message"
+            id="your-message"
+            cols="20"
+            rows="10"
+            style="height: 20rem"
+          ></textarea>
+          <label for="your-message"></label>
+
+          <span class="left-icon">
+            <i class="fa-solid fa-message"></i>
+          </span>
+          <span class="right-icon">
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="x-icon">
+            <i class="fa-solid fa-x"></i>
+          </span>
+        </div>
+      </form>
+      <input type="checkbox" name="send" id="send" checked />
+      <label for="send-me">Send me a copy of this message</label>
+      <button class="btn">SEND</button>
+    </div>
+  </body>
+</html>

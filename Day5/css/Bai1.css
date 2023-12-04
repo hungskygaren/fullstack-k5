@@ -1,0 +1,183 @@
+html {
+  font-size: 10px;
+}
+
+.contact {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  width: 45%;
+  padding: 20px 40px 20px 40px;
+}
+
+.contact .head {
+  font-family: "Lobster", sans-serif;
+  font-size: 4rem;
+}
+
+.contact p {
+  color: #c2c2c2;
+}
+
+.contact p span {
+  color: #ef6c63;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form-item {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c2c2c2;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.contact-input:hover {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.contact-input:hover ~ .left-icon {
+  border: 1px solid #000;
+  background-color: #000;
+}
+.contact-input:hover ~ .x-icon {
+  display: inline-block;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.contact-input:hover ~ .right-icon {
+  display: none;
+}
+.name-item:hover::before {
+  content: "Enter your name";
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  background-color: #000;
+  color: #fff;
+  line-height: 5rem;
+  text-align: center;
+  z-index: 1;
+}
+.email-item:hover::before {
+  content: "Enter your email";
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  background-color: #000;
+  color: #fff;
+  line-height: 5rem;
+  text-align: center;
+  z-index: 1;
+}
+.numbers-item:hover::before {
+  content: "Enter your numbers";
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  background-color: #000;
+  color: #fff;
+  line-height: 5rem;
+  text-align: center;
+  z-index: 1;
+}
+.subject-item:hover::before {
+  content: "Choose your subject";
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  background-color: #000;
+  color: #fff;
+  line-height: 5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.message-item:hover::before {
+  content: "Write message";
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  background-color: #000;
+  color: #fff;
+  line-height: 5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.contact-input {
+  order: 1;
+  display: inline-block;
+  flex: 1;
+  border: 0;
+  height: 5rem;
+  padding: 0 1rem;
+  outline: 0;
+}
+.contact-input:focus {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.contact-input:focus ~ .left-icon {
+  border: 1px solid #000;
+  background-color: #000;
+}
+.contact-input:focus ~ .right-icon {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.left-icon {
+  width: 5rem;
+  height: 100%;
+  line-height: 5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #c2c2c2;
+}
+
+.right-icon {
+  width: 5rem;
+  height: 100%;
+  line-height: 5rem;
+  order: 1;
+  text-align: center;
+  color: #c2c2c2;
+  font-size: 1rem;
+}
+.x-icon {
+  width: 5rem;
+  height: 100%;
+  line-height: 5rem;
+  order: 1;
+  text-align: center;
+  color: #c2c2c2;
+  font-size: 1rem;
+  display: none;
+}
+
+.btn {
+  background-color: #e74135;
+  color: #fff;
+  height: 3rem;
+  width: 15rem;
+  margin-left: 46rem;
+  margin-top: 3rem;
+  padding: 0%;
+}

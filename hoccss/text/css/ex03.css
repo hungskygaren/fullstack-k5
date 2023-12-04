@@ -1,0 +1,37 @@
+/* 
+Thay đổi font chữ cho văn bản 
+font-family : ten_font
+ serif --> Họ font có chân 
+ sans-serif --> họ font không có chân
+
+*/
+body {
+  /* font-family: "F 8", sans-serif; */
+  font-family: "Shizuru";
+  font-size: 100px;
+}
+/* @font-face {
+  font-family: "F 8";
+  src: url("../font/SVN-Fontbox-Boathouse-Filled.otf");
+} */
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Italic.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-BoldItalic.ttf");
+  font-weight: 700;
+}

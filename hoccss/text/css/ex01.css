@@ -1,0 +1,33 @@
+/* 
+color:thay đổi màu văn bản
+    cú pháp color:value
+    - tên màu
+    -mã màu
+    -rgb 
+    -hls
+Color opacity    
+Color transparent
+
+Các giá trị mặc định trong tất cả thuộc trính css
+-initial  gia tri mac dinh cua trinh duyet
+-inherit  gia tri ke thua element cha
+*/
+.title {
+  color: #e7d2a696;
+}
+
+.title:hover {
+  color: initial;
+}
+.sub-title {
+  color: red;
+}
+.sub-title2 {
+  color: rgba(255, 13, 0, 0.146);
+}
+.text1 {
+  color: rgba(0, 191, 255, 0.349);
+}
+.text2 {
+  color: deepskyblue;
+}
