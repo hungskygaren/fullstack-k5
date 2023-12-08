@@ -1,0 +1,139 @@
+html {
+  font-family: "Open Sans";
+}
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+.menu {
+  width: fit-content;
+  height: 50px;
+  font-size: 0;
+}
+.btn {
+  color: #666;
+  height: 100%;
+  background-color: white;
+  border: 4px solid white;
+  outline: 1px solid #cecece;
+  position: relative;
+}
+input {
+  color: #666;
+  height: 80%;
+  width: 300px;
+  background-color: white;
+  border: 4px solid white;
+  outline: 1px solid #cecece;
+  position: relative;
+}
+.fa-solid {
+  position: absolute;
+  top: 30%;
+}
+.fa-house-chimney,
+.fa-star,
+.fa-bullhorn,
+.fa-briefcase,
+.fa-pen-to-square,
+.fa-phone {
+  font-size: 16px;
+}
+.fa-house-chimney,
+.fa-star,
+.fa-bullhorn,
+.fa-briefcase,
+.fa-phone,
+.fa-pen-to-square {
+  left: 10px;
+}
+.about-us,
+.news,
+.portfolio {
+  padding-left: 10px;
+}
+.blog,
+.contacts {
+  padding-left: 15px;
+}
+.fa-angle-down {
+  right: 10px;
+  font-size: 16px;
+}
+.home {
+  width: 70px;
+}
+.fa-house-chimney {
+  top: 30%;
+  left: 30%;
+}
+.about-us,
+.news,
+.portfolio {
+  width: 120px;
+}
+.blog {
+  width: 100px;
+}
+
+.contacts {
+  width: 120px;
+}
+.menu .btn:hover {
+  background-color: #2da5da;
+  color: white;
+  cursor: pointer;
+}
+.menu .btn:focus .sub-menu {
+  display: block;
+  color: #666;
+}
+/* menu cap 2 */
+.sub-menu {
+  display: none;
+  min-width: fit-content;
+  min-height: fit-content;
+  position: absolute;
+  top: 50px;
+}
+.sub-menu-news,
+.sub-menu-about,
+.sub-menu-portf {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  list-style-type: none;
+  box-shadow: 4px 3px 10px 2px #aeaeae;
+}
+.sub-menu-news::before,
+.sub-menu-about::before,
+.sub-menu-portf::before {
+  content: "";
+  position: absolute;
+  bottom: 150px;
+  left: 20px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+li {
+  position: relative;
+  text-align: start;
+  padding-left: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #cecece;
+}
+.fa-check {
+  font-size: 20px;
+  left: 25px;
+  top: 25px;
+  transform: translateX(-50%) translateY(-50%);
+}
+li:hover {
+  background-color: #2da5da;
+  color: white;
+}
