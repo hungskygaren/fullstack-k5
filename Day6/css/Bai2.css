@@ -10,15 +10,15 @@ body {
   height: fit-content;
   background-color: #ebf5fe;
   display: flex;
-  justify-content: space-evenly;
+  margin-left: 10%;
 }
 section {
-  width: fit-content;
-  height: 485px;
+  width: auto;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 section .items:hover {
   border: 2px solid #e8584d;
@@ -26,7 +26,7 @@ section .items:hover {
 }
 
 .row {
-  width: 1130px;
+  width: 110%;
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -90,7 +90,15 @@ h3 {
   margin-left: 10px;
   font-size: 2rem;
 }
-
+.title p {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+  font-size: 2rem;
+  font-weight: 900;
+}
 p {
   margin-top: 10px;
   margin-bottom: 25px;
@@ -104,4 +112,7 @@ p {
   color: #1551df;
   border: 0;
   cursor: pointer;
+}
+h3::first-line {
+  word-spacing: 150px;
 }
