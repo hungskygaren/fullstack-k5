@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 80%;
+
+  /* background: green; */
+
+  margin: 30px;
+  /* padding: 30px; */
+  border: 1px solid red;
+  font-size: 0;
+}
+.box .col {
+  display: inline-block;
+  width: calc(100% / 3);
+  background: gray;
+  font-size: initial;
+  border: 1px solid red;
+  padding: 10px 20px;
+}

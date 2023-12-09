@@ -2,5 +2,10 @@
   border: 1px solid red;
   width: 200px;
   height: 200px;
-  padding: 20px 30px 40px 50px;
+  padding: 20px;
 }
+.lists span {
+  border: 1px solid green;
+  /* padding: 10px 30px; */
+}
+.lists span;
