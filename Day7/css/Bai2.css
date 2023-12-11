@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+a {
+  display: block;
+  width: auto;
+  height: 40px;
+  text-decoration: none;
+  color: black;
+  margin: 0 30px;
+  font-weight: 600;
+}
+li {
+  display: inline-block;
+}
+
+.banner {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.banner > img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.Vingroup {
+  width: 60%;
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
+}
+.Vingroup-info {
+  display: inline-block;
+  color: white;
+  width: 60%;
+  margin-left: 20px;
+  position: absolute;
+  top: 20px;
+}
+
+.Vingroup-name {
+  font-weight: 700;
+  text-shadow: 2px 2px rgba(184, 121, 38, 0.5);
+}
+
+.logo-Vingroup {
+  width: 30%;
+  background-color: white;
+  display: inline-block;
+  border-radius: 6px;
+}
+.logo-Vingroup > img {
+  width: 100%;
+  height: auto;
+}
+
+.Founded-year,
+.Investors {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+}
+.Investors {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.sub-header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  text-align: right;
+  padding: 0 30px;
+  line-height: 40px;
+}
+b {
+  font-size: 20px;
+  font-weight: 500;
+}
+a:hover {
+  border-bottom: 3px solid orangered;
+  color: orangered;
+}
+a:focus {
+  border-bottom: 3px solid orangered;
+  color: orangered;
+}
