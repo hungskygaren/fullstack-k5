@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+.real-estate {
+  width: 100%;
+  overflow-x: hidden;
+}
+.title {
+  width: 100%;
+  margin-left: 100px;
+  padding: 20px 0;
+  position: relative;
+}
+.title h2 {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.hot-provinces {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul li {
+  display: inline-block;
+  width: auto;
+  padding: 15px;
+  margin: 0 20px;
+  border-radius: 50px;
+  background-color: #e1e1e1;
+  text-align: center;
+  cursor: pointer;
+}
+li span {
+  display: block;
+}
+.city {
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+.total {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.list-HCM {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.child-HCM {
+  width: 27%;
+  height: 250px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.child-HCM img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 4px;
+}
+.title-child-HCM,
+.total-child-HCM {
+  position: absolute;
+  color: white;
+  z-index: 2;
+}
+.title-child-HCM {
+  top: 30px;
+  left: 20px;
+  font-size: 23px;
+}
+.total-child-HCM {
+  bottom: 30px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.total-child-HCM span {
+  font-weight: 900;
+}
+ul li:hover {
+  background-color: #b87926;
+  color: white;
+}
+ul li:focus {
+  background-color: #b87926;
+  color: white;
+}

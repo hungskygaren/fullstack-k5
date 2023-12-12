@@ -1,0 +1,14 @@
+.title {
+  display: inline;
+}
+.link {
+  width: 100px;
+  height: 100px;
+  background: green;
+  color: white;
+  display: inline-block;
+}
+.title:hover {
+  /* display: none; */
+  visibility: hidden;
+}

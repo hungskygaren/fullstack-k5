@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  border: 1px solid red;
+  margin: 30px auto;
+  width: 400px;
+}
+.box ul {
+  /* list-style-position: inside;
+  list-style-type: square; */
+  list-style: none;
+}
+.box ul li {
+  line-height: 1.5;
+}
+.box ul li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://cdn.iconscout.com/icon/free/png-256/free-right-arrow-439-1161082.png");
+
+  background-size: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.box ul li:hover::before {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSot1-81-_mgVnJ8Cs5isTDUBGpfciF44ZuRFW0Vf5-AotOSb0ygXDe_lVOCRReJ8z7vXs&usqp=CAU");
+}
