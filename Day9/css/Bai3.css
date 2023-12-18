@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 50px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-top: 20px;
+  color: #747988;
+}
+
+form {
+  width: 1000px;
+  color: gray;
+  text-align: center;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 20px 10px 10px;
+  outline: none;
+  border: 1px solid rgba(197, 197, 197, 0.488);
+}
+
+input,
+select,
+textarea {
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+input,
+label,
+select textarea {
+  transition: 0.5s;
+}
+
+input:focus {
+  border: 1px solid rgb(161, 161, 169);
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+  translate: 0 -20px;
+  font-size: 12px;
+}
+
+select {
+  padding: 10px;
+  color: gray;
+}
+
+option:disabled {
+  color: #393d52;
+}
+
+option {
+  color: gray;
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.row:first-child label:last-of-type {
+  left: 530px;
+}
+
+textarea {
+  font-family: sans-serif;
+}
+
+textarea + label {
+  top: 22px;
+  left: 20px;
+}
+
+button {
+  margin-top: 20px;
+  color: white;
+  background: #4d77d8;
+  padding: 10px 20px;
+  border: 1px solid #4d77d8;
+  border-radius: 900px;
+  font-weight: bolder;
+  width: 150px;
+  height: 50px;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
