@@ -1,0 +1,16 @@
+.box h1 {
+  color: red;
+  height: 40px;
+  transition-property: padding-left color height;
+  transition-duration: 1s;
+  border: 1px solid red;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+  transition: 0.4s 1s linear;
+}
+.box h1:hover {
+  padding-left: 200px;
+  color: rgb(68, 0, 255);
+  height: 70px;
+  border: 1px solid rgb(0, 30, 255);
+}
