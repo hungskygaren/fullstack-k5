@@ -1,0 +1,40 @@
+/* 
+transform thay đổi hình dạng 1 thẻ html
+xoay
+rotate(angle)
+rotateX(angle)
+rotateY(angle)
+
+phóng to,thu nhỏ
+scale(x,y) hoặc scale(value) (x=y)
+scaleX(x)
+scaleY(y)
+
+nghiêng
+skew(x,y)
+skewX
+skewY
+Di chuyển
+*/
+.wrap {
+  padding: 30px;
+  border: 1px solid red;
+}
+.box {
+  width: 10px;
+  height: 10px;
+  background: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  transition: all 0.4s linear;
+}
+.wrap:hover .box {
+  /* transform: rotate(1080deg) scale(1.5); */
+  /* transform: skew(30deg, 30deg); */
+  /* rotate: 30deg; */
+  translate: 50px;
+  rotate: 60deg;
+}
