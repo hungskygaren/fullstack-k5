@@ -21,8 +21,8 @@ Di chuyển
   border: 1px solid red;
 }
 .box {
-  width: 10px;
-  height: 10px;
+  width: 100px;
+  height: 100px;
   background: green;
   color: white;
   display: flex;
@@ -30,11 +30,15 @@ Di chuyển
   align-items: center;
   margin: 30px auto;
   transition: all 0.4s linear;
+  position: relative;
 }
 .wrap:hover .box {
-  /* transform: rotate(1080deg) scale(1.5); */
-  /* transform: skew(30deg, 30deg); */
-  /* rotate: 30deg; */
+  /* transform: rotate(1080deg) scale(1.5);
+  transform: skew(30deg, 30deg);
+  rotate: 30deg;
   translate: 50px;
   rotate: 60deg;
+  top: 100px;
+  left: 100px; */
+  translate: 50%;
 }
