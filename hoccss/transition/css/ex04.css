@@ -1,53 +1,29 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.button {
-  margin: 30px 30px;
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.button input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+h2 {
+    position: relative;
+    color: green;
 }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(87, 97, 87);
-  transition: 2s;
-
-  border-radius: 99px;
+h2 > span {
+    transition: top 0.3s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%; 
+    overflow: hidden;
+    background: yellow;
 }
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 30px;
-  left: 4px;
-  bottom: 3px;
-  background-color: rgb(255, 255, 255);
-  transition: 0.4s;
-
-  border-radius: 99px;
+h2 > span > span {
+    position: absolute;
+    bottom: 0;
+    color: red;
 }
-input:checked + .slider {
-  background-color: rgb(30, 200, 110);
-}
-input:checked + .slider::before {
-  height: 30px;
-  width: 30px;
-  left: 35px;
-  bottom: 3px;
-  box-shadow: 0 0 5 rgb(0, 0, 0);
+h2:hover > span {
+    top: 0;
 }

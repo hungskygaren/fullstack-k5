@@ -1,33 +1,38 @@
-/* 
-color:thay đổi màu văn bản
-    cú pháp color:value
-    - tên màu
-    -mã màu
-    -rgb 
-    -hls
-Color opacity    
-Color transparent
+/*
+Thuộc tính color: Thay đổi màu văn bản
+Cú pháp: color: value
+- Tên màu
+- Mã màu hexa
+- rgb
+- hls
 
-Các giá trị mặc định trong tất cả thuộc trính css
--initial  gia tri mac dinh cua trinh duyet
--inherit  gia tri ke thua element cha
+Color Opacity
+
+Color Transparent
+
+Các giá trị mặc định trong tất cả các thuộc tính css
+- initial --> Giá trị mặc định của trình duyệt
+- inherit --> Giá trị kế thừa element cha
 */
 .title {
-  color: #e7d2a696;
+  color: green;
 }
-
 .title:hover {
   color: initial;
 }
+
 .sub-title {
-  color: red;
+  color: rgb(238, 118, 6);
 }
-.sub-title2 {
-  color: rgba(255, 13, 0, 0.146);
+
+.sub-title-2 {
+  color: rgba(238, 118, 6, 0.513);
 }
-.text1 {
-  color: rgba(0, 191, 255, 0.349);
+
+.text-1 {
+  color: #e000c9;
 }
-.text2 {
-  color: deepskyblue;
+
+.text-2 {
+  color: #e000caa2;
 }

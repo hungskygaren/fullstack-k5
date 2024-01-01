@@ -1,24 +1,30 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: system-ui;
+  box-sizing: border-box;
 }
-
 .box {
-  position: relative;
   width: 400px;
   height: 300px;
-  font-size: 50px;
-
+  border: 1px solid rgb(74, 159, 0);
   margin: 0 auto;
+  position: relative;
 }
-
 .box span {
-  background: red;
-  position: absolute;
-  display: block;
-  content: "";
   display: block;
   width: 100px;
   height: 100px;
+  background: red;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   translate: -50% -50%;
 }
+/*
+Di chuyển span vào giữa box
+Không sử dụng: flex, vertical-align, margin
+*/

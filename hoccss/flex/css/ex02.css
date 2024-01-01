@@ -9,17 +9,28 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .partners {
-  width: 650px;
-  margin: 30px auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
+  padding: 30px 0;
 }
 
-.partners .item img {
+.partners .partner-list {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.partners .partner-list .item {
+  flex: 0 0 calc(100% / 5 - 50px);
+  text-align: center;
+}
+.partners .partner-list img {
   max-height: 50px;
   width: auto;
 }

@@ -35,7 +35,7 @@ Các bước tạo bộ đếm trong CSS
   counter-increment: song-number;
   padding: 7px 0;
   /* display: list-item;
-      list-style: inside decimal-leading-zero; */
+    list-style: inside decimal-leading-zero; */
 }
 
 .songs h2::before {

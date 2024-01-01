@@ -3,72 +3,74 @@
   margin: 0;
 }
 body {
-  height: 600px;
-  width: 600px;
-  background-image: url(https://images.unsplash.com/photo-1701735173211-bc2375b0909d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8);
+  height: 2000px;
 }
 .box {
-  width: auto;
-  height: 600px;
-  margin: 30px auto;
   border: 1px solid red;
+  width: 500px;
+  margin: 30px auto;
   padding: 30px;
-}
-.content {
   position: relative;
-  /* background-color: rgba(0, 0, 0, 0.477); */
-  height: 800px;
-  width: 800px;
-  margin: 0 auto;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 5%;
-  padding-top: 20px;
-  z-index: 100;
 }
-.box .content .item {
-  width: auto;
-  height: auto;
-  color: white;
-  position: relative;
-  z-index: 2;
 
-  border: 2px solid white;
+.box .content {
+  border: 1px solid green;
+  position: relative;
 }
+
+.box .content .item {
+  background: blueviolet;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
 .box .content .item:nth-child(2) {
-  /* margin-top: 20px;
-  margin-left: 20px; */
-  /* position: relative;
-  left: 30px;
-  top: 10px;
-  z-index: 1; */
+  /* margin-top: -20px;
+  margin-left: -20px; */
+  position: relative;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
   /* position: absolute;
-  width: auto;
-  height: auto;
   left: 50%;
-  top: 50%;
-  background: rgba(0, 0, 0, 0.457); */
+  top: 50%; */
+  /* width: auto;
+  height: auto;
+  background: #00000073; */
   /* position: fixed;
-  bottom: 0; */
-  color: black;
-  background: white;
+  bottom: 0;
+  right: 0; */
 }
 .box .content .item:nth-child(3) {
-  color: black;
-  background: white;
+  position: relative;
+  z-index: 2;
 }
 .box .content .item:nth-child(4) {
-  background: red;
+  position: absolute;
+  /* top: 30px;
+  left: 150px; */
+  width: auto;
+  height: auto;
+  /* left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; */
+  inset: 10px 20px 30px 40px;
 }
 .box .content .item:nth-child(1) {
-  background: red;
+  position: relative;
+  z-index: 3;
 }
-.lopphu {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  height: auto;
-  width: auto;
-  z-index: 1;
-}
+/*
+Thuộc tính position: Thay đổi vị trí các phần tử
+Cú pháp: position: static|relative|absolute|fixed
+Các thuộc tính mở rộng (Chỉ hoạt động khi có position (Trừ static))
+- top
+- left
+- right
+- bottom
+- z-index
+- inset
+*/

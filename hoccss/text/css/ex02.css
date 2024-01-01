@@ -1,27 +1,34 @@
-/* 
-
-Các đơn vị trong css
+/*
+Các đơn vị trong CSS
 1. Đơn vị tuyệt đối
--pixel(px)
--point(pt). 1pt = 1.3 px
+- pixel (px)
+- point (pt). 1pt = 1.3px
 2. Đơn vị tương đối
-    -em -> Tương đối với thành phần cha
-    -rem   Tương đối với mặc định trình duyệt
-    -%     Tương đối với thành phần cha
-    - vw -->học ở thuộc tính width,height
-    - vh -->học ở thuộc tính width,height
+- em --> Tương đối với thành phần cha
+- rem --> Tương đối với mặc định trình duyệt
+- % --> Tương đối với thành phần cha
+- vw
+- vh
+--> Học ở thuộc tính width, height
 
 Thuộc tính font-size
-    font-size: giatri + donvi
-
+Cú pháp: font-size: giatri + donvi
 */
-.content p {
-  /* font-size: 3em; */
-  font-size: 2em;
-}
-.content {
-  font-size: 2rem;
-}
 html {
   font-size: 10px;
+}
+
+.content {
+  /* font-size: 30px; */
+  font-size: 2rem;
+}
+
+.content p {
+  /* font-size: 2em; */
+  /* font-size: 200%; */
+  font-size: 2em;
+}
+
+.content p span {
+  font-size: 2em;
 }

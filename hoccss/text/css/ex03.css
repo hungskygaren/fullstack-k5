@@ -1,37 +1,58 @@
-/* 
-Thay đổi font chữ cho văn bản 
-font-family : ten_font
- serif --> Họ font có chân 
- sans-serif --> họ font không có chân
+/*
+Thay đổi font chữ cho văn bản
+font-family: ten_font
 
+serif --> Họ font có chân
+sans-serif --> Họ font không chân
 */
-body {
-  /* font-family: "F 8", sans-serif; */
-  font-family: "Shizuru";
-  font-size: 100px;
-}
 /* @font-face {
-  font-family: "F 8";
-  src: url("../font/SVN-Fontbox-Boathouse-Filled.otf");
+  font-family: "Font box";
+  src: url("../fonts/SVN-Fontbox-Boathouse-Filled.otf");
 } */
+
 @font-face {
   font-family: "Lato";
-  src: url("../font/Lato-LightItalic.ttf");
+  src: url("../fonts/Lato-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-LightItalic.ttf");
   font-weight: 300;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Lato";
-  src: url("../font/Lato-Light.ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../font/Lato-Italic.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../font/Lato-BoldItalic.ttf");
+  src: url("../fonts/Lato-BoldItalic.ttf");
   font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  /* font-family: "Font box", sans-serif; */
+  /* font-family: "Lato";
+  font-weight: 700;
+  font-style: italic; */
+  font-family: "Open Sans", sans-serif;
 }

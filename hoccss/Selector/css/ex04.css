@@ -1,9 +1,17 @@
-/* Cấu trúc chọn phần tử giả:  
+/*
+Cấu trúc chọn phần tử giả: 
 selector::tenphantu
-1.before after
-2.first-letter --> Chọn ký tự đầu tiên
-3. first-line  chọn dòng đầu tiên
-4.selection  chọn văn bản bôi đen
+
+1. before, after
+- Thêm phần tử vào trước và sau thẻ html
+- Điều kiện: Phải có thuộc tính content
+- Phần tử giả before, after ở dạng inline
+
+2. first-letter --> Chọn ký tự đầu tiên
+
+3. first-line --> Chọn dòng đầu tiên
+
+4. selection --> Chọn văn bản (Bôi đen)
 */
 /* .title::before {
   content: "a";
@@ -11,19 +19,24 @@ selector::tenphantu
 .title::after {
   content: "b";
 } */
+
 .content p::first-letter {
   color: red;
 }
+
 .content p::first-line {
-  color: rgb(224, 228, 20);
+  color: green;
 }
+
 .content p::selection {
-  color: rgb(224, 228, 20);
-  background: rgb(69, 79, 50);
+  background: black;
+  color: yellow;
 }
+
 .name {
   color: red;
 }
+
 .name::placeholder {
   color: green;
 }

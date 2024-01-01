@@ -1,28 +1,32 @@
-/* Đổ bóng khối
-box-shadow: h-offset:ngang v-ofset:dưới blur:độ nhoè spread:kích thước color
-test-shadow h-offset:ngang v-ofset:dưới blur:độ nhoè color
-
+/*
+Đổ bóng khối: box-shadow
+Cú pháp: box-shadow: h-offset v-offset blur spread color
+Đổ bóng chữ: text-shadow
+Cú pháp: text-shadow: h-offset v-offset blur color
 */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
+
 .box {
   width: 100px;
   height: 100px;
   margin: 30px auto;
-  background: green;
-  box-shadow: 10px 0px 0px 0px rgb(149, 141, 141);
+  /* background: green; */
+  /* box-shadow: 5px 5px 5px 0px red, 10px 10px 5px 0 green; */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
 .content {
-  text-shadow: 2px 2px 3px red;
-}
-.number {
-  font-size: 200px;
-  color: white;
-  text-shadow: 0 2px 2px #dfdfdf, -2px 5px 1px #cbcbcb, -4px 8px 1px #979797,
-    -6px 11px 1px #a2a2a2, -8px 14px 1px #aeaeae, -10px 17px 1px #b5b5b5,
-    -12px 20px 1px #bebebe, -14px 23px 1px #cecece, -16px 26px 1px #dbdbdb,
-    -18px 29px 1px #dfdfdf;
+  /* text-shadow: 3px 3px 4px red; */
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }

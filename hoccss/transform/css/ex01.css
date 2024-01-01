@@ -1,20 +1,21 @@
-/* 
-transform thay đổi hình dạng 1 thẻ html
-xoay
-rotate(angle)
-rotateX(angle)
-rotateY(angle)
-
-phóng to,thu nhỏ
-scale(x,y) hoặc scale(value) (x=y)
-scaleX(x)
-scaleY(y)
-
-nghiêng
-skew(x,y)
-skewX
-skewY
-Di chuyển
+/*
+Thuộc tính transform: Thay đổi hình dạng của 1 thẻ html
+- Xoay
++ rotate(angle)
++ rotateX(angle)
++ rotateY(angle)
+- Phóng to, thu nhỏ
++ scale(x, y) hoặc scale(value) (x = y)
++ scaleX(x)
++ scaleY(y)
+- Nghiêng
++ skew(x,y)
++ skewX(x)
++ skewY(y)
+- Di chuyển
++ translate(x,y)
++ translateX(x)
++ translateY(y)
 */
 .wrap {
   padding: 30px;
@@ -24,21 +25,25 @@ Di chuyển
   width: 100px;
   height: 100px;
   background: green;
-  color: white;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px auto;
   transition: all 0.4s linear;
   position: relative;
+  top: 0;
+  left: 0;
 }
 .wrap:hover .box {
-  /* transform: rotate(1080deg) scale(1.5);
-  transform: skew(30deg, 30deg);
-  rotate: 30deg;
-  translate: 50px;
-  rotate: 60deg;
-  top: 100px;
-  left: 100px; */
+  /* transform: rotate(360deg); */
+  /* transform: rotateX(180deg); */
+  /* transform: rotateY(180deg); */
+  /* transform: rotate(30deg) scale(1.5); */
+  /* transform: skew(30deg, 30deg); */
+  /* rotate: 30deg; */
+  /* scale: 1.5 1; */
+  /* transform: translate(100px, 100px); */
+  /* left: 50%; */
   translate: 50%;
 }
