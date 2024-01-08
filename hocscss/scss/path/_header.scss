@@ -1,0 +1,39 @@
+.header {
+  $isHeader: false;
+  @if $isHeader == true {
+    .header-inner {
+      display: flex;
+      color: $primaryColor;
+      justify-content: space-around;
+      padding: 30px auto;
+      .nav {
+        &.menu {
+          display: flex;
+          font-size: var(--font-size);
+          > li {
+            > a {
+              display: block;
+              &:hover {
+                color: black;
+                &::before {
+                  content: "";
+                }
+              }
+            }
+          }
+        }
+      }
+      .logo {
+        padding: 10px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  } @else {
+    .auth-links {
+      color: green;
+    }
+  }
+}

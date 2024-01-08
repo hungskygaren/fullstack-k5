@@ -1,0 +1,29 @@
+/* coment css*/
+:root {
+  --font-size: 13px;
+}
+
+.header .auth-links {
+  color: green;
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+}
+
+.posts {
+  box-shadow: 5px 5px 10px #ccc;
+  padding: 30px;
+  background: gray;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product {
+  padding: 30px;
+  background: gray;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=ex01.css.map */

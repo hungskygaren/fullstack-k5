@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.skeleton-loader {
+  width: 400px;
+  height: 200px;
+  background: gray;
+  margin: 30px auto;
+  padding: 20px;
+  position: relative;
+}
+.skeleton-loader::before {
+  content: "";
+
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 20%,
+    rgba(221, 11, 235, 1) 41%,
+    transparent 74%,
+    transparent 99%,
+    transparent 100%
+  );
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  display: block;
+  animation: skeleton;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes skeleton {
+  from {
+    translate: -100%;
+  }
+  to {
+    transition: 200%;
+  }
+}
+
+.skeleton-loader .skeleton-header {
+  display: flex;
+  gap: 15px;
+}
+.skeleton-loader span {
+  background: green;
+  display: block;
+  margin-bottom: 15px;
+}
+.skeleton-loader .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.line-1 {
+  width: 150px;
+  height: 20px;
+}
+.line-2 {
+  width: 250px;
+  height: 20px;
+}
+.line-3 {
+  width: 100%;
+  height: 20px;
+}
+.line-4 {
+  width: 80%;
+  height: 20px;
+}

@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: url("https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg")
+    no-repeat 0;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.backgr-sub {
+  width: 64%;
+  height: 140%;
+  position: absolute;
+  border-radius: 50%;
+  background: url("https://hoanganf8.github.io/htmlcss_project02/image/dot-texture.png")
+    repeat 0 0 #fff;
+  top: -20%;
+  right: -32%;
+
+  pointer-events: none;
+}
+.information {
+  width: 584px;
+  position: absolute;
+  top: 16%;
+  left: 13%;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  background-color: transparent;
+  color: #fff;
+  height: 65px;
+  border-radius: 50%;
+}
+.small-title {
+  display: block;
+  color: #fff;
+  margin-top: 27px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: Rajdhani, sans-serif;
+}
+.title {
+  color: #fff;
+  font-family: Titillium, sans-serif;
+  font-size: 6.5rem;
+  font-weight: 900;
+  position: relative;
+  top: -44.5px;
+  text-align: center;
+}
+
+.para {
+  color: #fff;
+  text-align: center;
+  width: 384px;
+  margin: 30px auto 0;
+  font-size: 1.125rem;
+  line-height: 1.3333333333em;
+  font-weight: 500;
+  font-family: Rajdhani, sans-serif;
+  position: relative;
+  top: -65px;
+}
+.tag-form {
+  width: 360px;
+  height: 53px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  margin: 25px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.btn-login,
+.btn-register {
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 54px;
+  font-family: Rajdhani;
+  transition: background-color 0.2s ease-in;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+input[type="radio"]:checked + label {
+  color: #333;
+  background-color: #fff;
+}
+.hidden-login {
+  background-color: #ffffff;
+  width: 485px;
+  height: 630px;
+  border-radius: 12px;
+  position: absolute;
+  top: -74px;
+  right: -753px;
+  box-shadow: 0 0 30px 10px rgba(199, 199, 199, 0.186);
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+input[id="login"]:checked ~ .hidden-login {
+  right: -554px;
+  opacity: 1;
+  z-index: 10;
+}
+.hidden-login img {
+  position: absolute;
+  top: -68px;
+  left: -80px;
+}
+.title-login {
+  font-size: 1.625rem;
+  text-align: center;
+  font-weight: 900;
+  color: #3e3f5e;
+  font-family: Rajdhani;
+  line-height: 1em;
+  margin-top: 65px;
+}
+.username {
+  text-align: center;
+  margin: 75px auto 0;
+  position: relative;
+}
+.password {
+  text-align: center;
+  margin: 28px auto 0;
+  position: relative;
+}
+.username input,
+.password input {
+  width: 355px;
+  height: 55px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: Rajdhani;
+  font-weight: 900;
+  line-height: 1em;
+  outline: 0;
+  border: 1px solid #dedeea;
+  border-radius: 12px;
+  transition: border 0.2s ease;
+}
+
+.username label,
+.password label {
+  color: #adafca;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 5px;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  display: block;
+  line-height: 1em;
+  font-family: Rajdhani, sans-serif;
+}
+.username input:focus ~ label,
+.username input:not(:placeholder-shown) + label,
+.password input:focus ~ label,
+.password input:not(:placeholder-shown) + label {
+  top: -4px;
+  left: 80px;
+  font-size: 0.5rem;
+}
+.re-for {
+  width: 355px;
+  height: 55px;
+  margin: 30px auto 0;
+  display: flex;
+  position: relative;
+}
+.icon-hidden {
+  color: #fff;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+  border: 1px solid #dedeea;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.remember label {
+  height: 20px;
+  font-size: 15px;
+  font-family: Rajdhani;
+  font-weight: 900;
+  display: flex;
+  cursor: pointer;
+}
+input[id="remember"]:checked ~ label > .icon-hidden {
+  background-color: #23d2e2;
+  border-color: #23d2e2;
+}
+.forgot a {
+  color: #adafca;
+  font-size: 15px;
+  font-family: Rajdhani;
+  font-weight: 900;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.forgot a:hover {
+  color: #23d2e2;
+}
+.btn-login-acc {
+  color: #ffffff;
+  background-color: #615dfa;
+  width: 360px;
+  height: 52px;
+  border: 2px solid #5753e4;
+  border-radius: 12px;
+  box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
+  margin: -5px auto;
+  font-size: 16px;
+  font-family: Rajdhani;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+}
+.btn-login-acc:hover {
+  background-color: #5753e4;
+}
+
+.btn-login-acc:focus {
+  border-color: black;
+}
+.source {
+  width: 360px;
+  margin: 50px auto 0;
+}
+.login-other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.other-login hr {
+  border: 0.25px solid #3333331f;
+}
+.other-login span {
+  color: #3e3f5e;
+  background-color: #fff;
+  width: fit-content;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Rajdhani;
+  font-weight: 900;
+  text-align: center;
+  display: block;
+  position: relative;
+  top: -21px;
+}
+.other-app {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.outer-fb a,
+.outer-tw a,
+.outer-twch a,
+.outer-ytb a {
+  color: #ffffff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  transition: all 0.3s ease;
+}
+.outer-fb a:hover,
+.outer-tw:hover a,
+.outer-twch:hover a,
+.outer-ytb:hover a {
+  top: -10px;
+}
+.outer-fb a {
+  background-color: #3762d2;
+  text-decoration: none;
+}
+
+.outer-tw a {
+  background-color: #1abcff;
+  text-decoration: none;
+}
+
+.outer-twch a {
+  background-color: #7b5dfa;
+  text-decoration: none;
+}
+
+.outer-ytb a {
+  background-color: #fd434f;
+  text-decoration: none;
+}
+.hidden-register {
+  background-color: #fff;
+  width: 484px;
+  height: 776px;
+  position: absolute;
+  top: -112px;
+  right: -753px;
+  border-radius: 12px;
+  box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+input[id="register"]:checked ~ .hidden-register {
+  right: -553px;
+  opacity: 1;
+  z-index: 10;
+}
+.hidden-register img {
+  position: absolute;
+  top: -32px;
+  left: -80px;
+}
+.hidden-register h2 {
+  font-size: 1.625rem;
+  text-align: center;
+  color: #3e3f5e;
+  font-family: Rajdhani;
+  font-weight: 900;
+  line-height: 1em;
+  margin-top: 50px;
+}
+.hidden-register h2::selection {
+  color: #fff;
+  background-color: #23d2e2;
+}
+.youremail {
+  text-align: center;
+  margin: 75px auto 0;
+  position: relative;
+}
+.usernamess2,
+.passwordss2,
+.repeat-pass {
+  text-align: center;
+  margin: 28px auto 0;
+  position: relative;
+}
+.youremail input,
+.usernamess2 input,
+.passwordss2 input,
+.repeat-pass input {
+  width: 355px;
+  height: 55px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: Rajdhani;
+  font-weight: 7 00;
+  line-height: 1em;
+  outline: 0;
+  border: 1px solid #dedeea;
+  border-radius: 12px;
+  transition: border 0.2s ease;
+}
+.youremail input:focus,
+.usernamess2 input:focus,
+.passwordss2 input:focus,
+.repeat-pass input:focus {
+  border: 1px solid #615dfa;
+}
+.youremail label,
+.usernamess2 label,
+.passwordss2 label,
+.repeat-pass label {
+  color: #adafca;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 5px;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  display: block;
+  line-height: 1em;
+  font-family: Rajdhani, sans-serif;
+}
+.youremail input:focus ~ label,
+.youremail input:not(:placeholder-shown) + label,
+.usernamess2 input:focus ~ label,
+.usernamess2 input:not(:placeholder-shown) + label,
+.passwordss2 input:focus ~ label,
+.passwordss2 input:not(:placeholder-shown) + label,
+.repeat-pass input:focus ~ label,
+.repeat-pass input:not(:placeholder-shown) + label {
+  top: -4px;
+  left: 80px;
+  font-size: 0.5rem;
+}
+.send-update {
+  width: 355px;
+  height: 55px;
+  margin: 30px auto 0;
+  display: flex;
+  position: relative;
+}
+.icon-hidden {
+  color: #fff;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+  border: 1px solid #dedeea;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.send label {
+  height: 20px;
+  font-size: 15px;
+  font-family: Rajdhani;
+  font-weight: 900;
+  display: flex;
+  cursor: pointer;
+}
+.send label span::selection {
+  color: #fff;
+  background-color: #23d2e2;
+}
+input[id="send"]:checked ~ label > .icon-hidden {
+  background-color: #23d2e2;
+  border-color: #23d2e2;
+}
+.btn-register-now {
+  color: #ffffff;
+  background-color: #23d2e2;
+  width: 360px;
+  height: 52px;
+  border: 2px solid #23d2e2;
+  border-radius: 12px;
+  box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
+  margin: -5px auto;
+  font-size: 16px;
+  font-family: Rajdhani;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.btn-register-now:hover {
+  background-color: #1cc6d5;
+  border-color: #1cc6d5;
+}
+
+.btn-register-now:focus {
+  border-color: black;
+}
+
+/* para */
+.para-register {
+  display: flex;
+  justify-content: center;
+}
+.para-register .para-child {
+  margin-top: 30px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143em;
+  text-align: left;
+  font-weight: 500;
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+}
+
+.para-register .para-child a {
+  text-decoration: none;
+  color: #23d2e2;
+}
+
+.class-pseudo {
+  display: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    position: static;
+  }
+
+  .backgr-sub {
+    display: none;
+  }
+
+  .information {
+    padding-top: 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .information .para {
+    display: none;
+  }
+
+  .tag-form {
+    margin-top: 0;
+  }
+
+  .hidden-login,
+  .hidden-register {
+    top: 450px;
+    left: 10%;
+    right: 0;
+  }
+  .hidden-login img,
+  .hidden-register img {
+    display: none;
+  }
+
+  .class-pseudo {
+    display: block;
+    height: 900px;
+  }
+}

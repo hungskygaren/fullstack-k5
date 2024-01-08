@@ -1,0 +1,26 @@
+// comment trong css
+/* coment css*/
+// Cú pháp lồng:selector,thuộc tính(không nên dùng)
+@import "path/variable";
+@import "path/header";
+@import "path/footer.scss";
+// place holder
+@mixin section-base {
+  padding: 30px;
+  background: gray;
+}
+@mixin center($width, $space: 0) {
+  max-width: $width;
+  margin: $space auto;
+}
+.posts {
+  box-shadow: 5px 5px 10px #ccc;
+  @include section-base; // @extend %section-base;
+  @include center(1000px);
+}
+.product {
+  padding: 30px;
+  background: gray;
+  border-radius: 20px;
+  // @extend %section-base;
+}

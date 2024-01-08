@@ -1,0 +1,54 @@
+.box {
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+@keyframes move-span {
+  from {
+    background: blue;
+    height: 0px;
+  }
+  25% {
+    height: 25px;
+  }
+  50% {
+    background: red;
+    height: 50px;
+  }
+  75% {
+    height: 75px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@keyframes box-loading {
+  50% {
+    height: 120px;
+  }
+}
+.box span {
+  width: 30px;
+  height: 50px;
+  border-radius: 15px;
+  display: block;
+  background: green;
+  animation-name: box-loading;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.box span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.box span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.box span:nth-child(4) {
+  animation-delay: 0.3s;
+}

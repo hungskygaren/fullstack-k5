@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/Bai1.css" />
+    <title>Vikinger | Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="backgr-sub"></div>
+      <div class="information">
+        <span class="logo"
+          ><img
+            src="https://cdn.iconscout.com/icon/premium/png-512-thumb/viking-3156947-2627081.png?f=webp&w=256"
+            alt="logo"
+        /></span>
+        <span class="small-title">WELCOME TO</span>
+        <h1 class="title">VIKINGER</h1>
+        <p class="para">
+          The next generation social network &<br />
+          community! Connect with your friends and<br />
+          play with our quests and badges gamification<br />
+          system!
+        </p>
+        <div class="tag-form">
+          <input type="radio" name="btn" id="login" checked hidden />
+          <label class="btn-login" for="login">Login</label>
+          <input type="radio" name="btn" id="register" hidden />
+          <label class="btn-register" for="register">Register</label>
+          <!-- form hidden login -->
+          <div class="hidden-login">
+            <img
+              src="https://odindesignthemes.com/vikinger/img/landing/rocket.png"
+              alt="cover-imge"
+            />
+            <h2 class="title-login">Account Login</h2>
+            <form>
+              <!-- User name -->
+              <div class="username">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder=" "
+                  autofocus
+                />
+                <label for="username">Username or Email</label>
+              </div>
+
+              <!-- pass word -->
+              <div class="password">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder=" "
+                />
+                <label for="password">Password</label>
+              </div>
+
+              <!-- remember or forgot -->
+              <div class="re-for">
+                <!-- remember -->
+                <div class="remember">
+                  <input type="checkbox" name="remember" id="remember" hidden />
+
+                  <label for="remember"
+                    ><div class="icon-hidden">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <span>Remember Me</span></label
+                  >
+                </div>
+
+                <!-- forgot -->
+                <div class="forgot">
+                  <a href="#">Forgot Password?</a>
+                </div>
+              </div>
+
+              <!-- button login -->
+              <button class="btn-login-acc">Login to your Account!</button>
+            </form>
+
+            <!-- source -->
+            <div class="source">
+              <span class="other-login">
+                <hr />
+                <span>Login with your Social Account</span>
+              </span>
+              <div class="other-app">
+                <!-- fb -->
+                <span class="outer-fb">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </span>
+                <!-- switter -->
+                <span class="outer-tw">
+                  <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                </span>
+                <!-- twitch -->
+                <span class="outer-twch">
+                  <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                </span>
+                <!-- ytb -->
+                <span class="outer-ytb">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- end form login hidden -->
+
+          <!-- form register -->
+          <div class="hidden-register">
+            <img
+              src="https://odindesignthemes.com/vikinger/img/landing/rocket.png"
+              alt="cover-imge"
+            />
+            <h2>Create your Account!</h2>
+            <form>
+              <!-- your email -->
+              <div class="youremail">
+                <input
+                  type="email"
+                  name="youremail"
+                  id="youremail"
+                  autofocus
+                  placeholder=" "
+                />
+                <label for="youremail">Your Email</label>
+              </div>
+
+              <!-- usernamess2 -->
+              <div class="usernamess2">
+                <input
+                  type="text"
+                  name="usernamess2"
+                  id="usernamess2"
+                  placeholder=" "
+                />
+                <label for="usernamess2">Username</label>
+              </div>
+
+              <!-- passwordss2 -->
+              <div class="passwordss2">
+                <input
+                  type="password"
+                  name="passwordss2"
+                  id="passwordss2"
+                  placeholder=" "
+                />
+                <label for="passwordss2">Username</label>
+              </div>
+
+              <!-- repeat pasword -->
+              <div class="repeat-pass">
+                <input
+                  type="password"
+                  name="repeat-pass"
+                  id="repeat-pass"
+                  placeholder=" "
+                />
+                <label for="repeat-pass">Repeat pass</label>
+              </div>
+
+              <!-- send  -->
+              <div class="send-update">
+                <div class="send">
+                  <input type="checkbox" name="send" id="send" hidden />
+
+                  <label for="send"
+                    ><div class="icon-hidden">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <span>Send me news and updates via email </span></label
+                  >
+                </div>
+              </div>
+              <!-- button register -->
+              <button class="btn-register-now">Register Now!</button>
+            </form>
+            <p class="para-register">
+              <span class="para-child">
+                You'll receive a confirmation email in your inbox with a<br />
+                link to activate your account. If you have any problems,<br />
+                <a href="#!">contact us</a>!
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="class-pseudo"></div>
+      </div>
+    </div>
+  </body>
+</html>
