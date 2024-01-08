@@ -1,0 +1,8 @@
+@mixin flex-direc {
+  display: flex;
+  flex-direction: column;
+}
+@mixin align-item {
+  display: flex;
+  align-items: center;
+}
