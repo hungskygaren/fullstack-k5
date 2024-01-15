@@ -1,0 +1,56 @@
+/* Xây dựng thư viện frid system */
+/* Chia chiều ngang thành 12 ô bằng nhau
+- dùng số để thể hiện số ô : col-(number).
+ví dụ .col-1(chiếm 1 ô) .col-2(cột này chiếm 2 ô)
+-Dùng class .row để thể hiện flex container
+- Dùng class .container để thể hiện container của trang web
+RESPONSIVE : quy ước breakpoint
+- .col-{number}: <576px
+- .col-sm-{number}: >=576px
+- .col-md-{number}: >=768px
+- .col-lg-{number}: >=992px
+- .col-xl-{number}: >=1200px
+- .col-xxl-{number}: >=1400px
+
+Cú pháp chung : .col-{breakpoint}-{number}
+Nếu class không có breakpoint -> Màn hình nhỏ nhất
+*/
+$containerWidth: 1200px;
+$gridColumn: 12;
+$columnSpace: 20px;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1 * $columnSpace / 2;
+}
+[class^="col-"] {
+  padding: 0 $columnSpace / 2;
+}
+
+@mixin column($breakpoint: "") {
+  @for $i from 1 through $gridColumn {
+    $prefix: "";
+    @if ($breakpoint != "") {
+      $prefix: $breakpoint + "-";
+    }
+
+    #{".col-" + $prefix + $i} {
+      flex-basis: 100% / ($gridColumn / $i);
+      max-width: 100% / ($gridColumn / $i);
+    }
+  }
+}
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992,
+  xl: 1200,
+  xxl: 1400,
+);
+@include column();
+@each $breakpoint, $width in $breakpoints {
+  @media screen and (min-width: #{$width}px) {
+    @include column($breakpoint);
+  }
+}

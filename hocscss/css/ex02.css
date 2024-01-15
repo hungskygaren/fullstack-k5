@@ -1,3 +1,28 @@
+.type {
+  font-weight: normal;
+  width: 40px;
+}
 
+.type {
+  font-weight: bold;
+  width: 60px;
+}
+
+.type {
+  font-weight: 900;
+  width: 80px;
+}
+
+.column-small {
+  width: 40px;
+}
+
+.column-regular {
+  width: 60px;
+}
+
+.column-large {
+  width: 80px;
+}
 
 /*# sourceMappingURL=ex02.css.map */

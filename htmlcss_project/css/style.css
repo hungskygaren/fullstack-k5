@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  color: #2c2c2c;
+  line-height: 1.27;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+a:hover {
+  color: #46b20f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c2c2c;
+}
+
+:root {
+  --grey-1000: #3d3c3c;
+  --grey-900: #515151;
+  --grey-800: #656565;
+  --grey-700: #7a7a7a;
+  --grey-600: #8e8e8e;
+  --grey-500: #a3a3a3;
+  --grey-400: #b7b7b7;
+  --grey-300: #cbcbcb;
+  --grey-200: #e0e0e0;
+  --grey-100: #f4f4f4;
+  --green-1000: #216000;
+  --green-900: #2e8900;
+  --green-800: #46b20f;
+  --green-700: #63db25;
+  --green-600: #81ff41;
+  --green-500: #98ff64;
+  --green-400: #aeff86;
+  --green-300: #c5ffa8;
+  --green-200: #dcffca;
+  --green-100: #f2ffec;
+  --orange-1000: #662400;
+  --orange-900: #8e3300;
+  --orange-800: #b74200;
+  --orange-700: #e05000;
+  --orange-600: #ff6916;
+  --orange-500: #ff8440;
+  --orange-400: #ff9f6a;
+  --orange-300: #ffba94;
+  --orange-200: #ffd5bd;
+  --orange-100: #fff0e7;
+  --main-color: var(--green-800);
+  --content: #2c2c2c;
+  --white: #fff;
+  --max-width: 1440px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 108.333px;
+  justify-content: center;
+  background: var(--white);
+  box-shadow: 0px 1.667px 8.333px 0px rgba(0, 0, 0, 0.15);
+}
+.navbar .row {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo {
+  background: url(../images/logo/logo.png) no-repeat;
+  background-size: cover;
+  width: 105px;
+  height: 78px;
+}
+.navbar .menu {
+  width: 1000px;
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 200px;
+}
+.navbar .menu .item {
+  color: var(--content, #2c2c2c);
+  font-family: Inter;
+  font-size: 16.667px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21.667px; /* 130% */
+}
+.navbar .menu .cart-link {
+  position: relative;
+}
+.navbar .menu .cart-link .cart-number {
+  width: 13.333px;
+  height: 13.333px;
+  flex-shrink: 0;
+  fill: var(--orange-700, #e05000);
+  background-color: #e05000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -0.3rem;
+  left: 2rem;
+}
+.navbar .menu .cart-link p {
+  color: var(--white, #fff);
+  font-family: Inter;
+  font-size: 10.833px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.417px; /* 188.462% */
+  width: 7.333px;
+  height: 16.667px;
+  flex-shrink: 0;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+}
+.welcome .container {
+  width: 1200px;
+}
+.welcome .text-introduce {
+  width: 514px;
+  height: 275.833px;
+  position: relative;
+  left: 0;
+  top: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.welcome .text-introduce h2 {
+  color: var(--Content, #2c2c2c);
+  font-family: Inter;
+  font-size: 36.667px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 131.523%; /* 48.225px */
+}
+.welcome .text-introduce span {
+  color: var(--Content, #2c2c2c);
+  font-family: Inter;
+  font-size: 43.333px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.welcome .text-introduce p {
+  color: var(--Content, #2c2c2c);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.417px; /* 127.604% */
+}
+.welcome .background {
+  width: 705.833px;
+  height: 708.333px;
+  position: absolute;
+  right: 0;
+  border-radius: 16.667px 0px 0px 16.667px;
+  background: var(--green-200, #dcffca);
+}
+.welcome .img-chop {
+  position: absolute;
+  z-index: 1;
+  left: 62rem;
+  top: 8rem;
+  display: flex;
+  align-items: center;
+}
+.welcome .img-chop img {
+  width: 717.402px;
+  height: 719.029px;
+}
+.welcome .text-chop {
+  width: 676.141px;
+  transform: rotate(90deg);
+  color: var(--green-1000, #216000);
+  font-family: Inter;
+  font-size: 166.667px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 166.667px */
+  opacity: 0.15;
+  position: absolute;
+  z-index: 1;
+  right: -15rem;
+  top: 35rem;
+}
+
+/*# sourceMappingURL=style.css.map */
