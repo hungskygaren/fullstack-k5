@@ -22,11 +22,10 @@ $columnSpace: 20px;
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1 * $columnSpace / 2;
 }
-[class^="col-"] {
-  padding: 0 $columnSpace / 2;
-}
+// [class^="col-"] {
+//   padding: 0 $columnSpace / 2;
+// }
 
 @mixin column($breakpoint: "") {
   @for $i from 1 through $gridColumn {

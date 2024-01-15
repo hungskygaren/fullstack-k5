@@ -19,11 +19,6 @@ Nếu class không có breakpoint -> Màn hình nhỏ nhất
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
-}
-
-[class^=col-] {
-  padding: 0 10px;
 }
 
 .col-1 {

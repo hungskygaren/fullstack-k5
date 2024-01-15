@@ -87,6 +87,8 @@
 .welcome {
   display: flex;
   justify-content: center;
+  height: 800px;
+
   .container {
     width: 1200px;
   }
@@ -160,5 +162,182 @@
     z-index: 1;
     right: -15rem;
     top: 35rem;
+  }
+}
+.manager {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .manager-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 105px;
+  }
+  .manager-title h2 {
+    padding-left: 320px;
+    padding-right: 321px;
+    color: var(--content, #2c2c2c);
+    text-align: center;
+    font-family: Inter;
+    font-size: 31.667px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 131.523%; /* 41.649px */
+  }
+  .manager-title p {
+    padding-left: 278px;
+    padding-right: 278px;
+    color: var(--Content, #2c2c2c);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.417px; /* 127.604% */
+  }
+  .achievement {
+    padding-left: 82.5px;
+    padding-right: 82.5px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    .trust {
+      width: 294.167px;
+      height: 337.5px;
+
+      border-radius: 3.333px;
+      background: var(--white, #f02222);
+      box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 28px;
+      .trust-bg-logo {
+        border-radius: 10px;
+        background: var(--orange-100, #fff0e7);
+        width: 83.333px;
+        height: 83.333px;
+        flex-shrink: 0;
+        margin-top: 60px;
+        margin-left: 33px;
+        display: flex;
+        justify-content: center;
+      }
+
+      span {
+        width: 275px;
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 43.333px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-left: 33px;
+        padding-right: 38px;
+      }
+      p {
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30.833px; /* 154.167% */
+        width: 274.167px;
+        margin-left: 33px;
+        padding-right: 38px;
+      }
+    }
+    .service {
+      border-radius: 3.333px;
+      background: var(--white, #08c781);
+      box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+      width: 342.5px;
+      height: 392.5px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .service-bg-logo {
+        width: 83.333px;
+        height: 83.333px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: var(--Green-100, #f2ffec);
+        margin-top: 60px;
+        margin-left: 33px;
+        display: flex;
+        justify-content: center;
+      }
+
+      span {
+        width: 275px;
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 43.333px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-left: 33px;
+        padding-right: 38px;
+      }
+      p {
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30.833px; /* 154.167% */
+        width: 274.167px;
+        margin-left: 33px;
+        padding-right: 15px;
+      }
+    }
+    .coverage {
+      margin-top: 28px;
+      border-radius: 3.333px;
+      background: var(--white, #000fdc);
+      box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+      width: 294.167px;
+      height: 337.5px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .trust-bg-logo {
+        border-radius: 10px;
+        background: var(--orange-100, #fff0e7);
+        width: 83.333px;
+        height: 83.333px;
+        flex-shrink: 0;
+        margin-top: 60px;
+        margin-left: 33px;
+        display: flex;
+        justify-content: center;
+      }
+
+      span {
+        width: 275px;
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 43.333px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-left: 33px;
+        padding-right: 38px;
+      }
+      p {
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30.833px; /* 154.167% */
+        width: 274.167px;
+        margin-left: 33px;
+
+        padding-right: 38px;
+      }
+    }
   }
 }
