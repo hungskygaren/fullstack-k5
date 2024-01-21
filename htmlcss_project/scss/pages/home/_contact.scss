@@ -1,0 +1,92 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 133px;
+  .contact-inside {
+    display: flex;
+    justify-content: center;
+    .contact-img {
+      width: 485.833px;
+      height: 498.333px;
+      flex-shrink: 0;
+    }
+    .contact-form {
+      img {
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26.667px; /* 133.333% */
+      }
+      h5 {
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26.667px; /* 133.333% */
+      }
+      form {
+        margin-top: 26px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px;
+      }
+      #name {
+        display: inline-flex;
+        padding: 13.333px 421.667px 13.333px 13.333px;
+        align-items: center;
+        gap: 8.333px;
+        border-radius: 6.667px;
+        border: 0.833px solid var(--grey-500-main, #a3a3a3);
+      }
+      #email {
+        border-radius: 6.667px;
+        border: 0.833px solid var(--grey-500-main, #a3a3a3);
+        display: flex;
+        width: 286.667px;
+        padding: 13.333px 176.667px 13.333px 13.333px;
+        align-items: center;
+        gap: 8.333px;
+      }
+      #phone {
+        display: flex;
+        width: 286.667px;
+        padding: 13.333px 176.667px 13.333px 13.333px;
+        align-items: center;
+        gap: 8.333px;
+        border-radius: 6.667px;
+        border: 0.833px solid var(--grey-500-main, #a3a3a3);
+      }
+      textarea {
+        border-radius: 6.667px;
+        border: 0.833px solid var(--grey-500-main, #a3a3a3);
+        display: inline-flex;
+        padding: 13.333px 497.5px 116.667px 13.333px;
+        align-items: center;
+        gap: 8.333px;
+      }
+      #submit {
+        border-radius: 6.667px;
+        background: var(--green-800-main, #46b20f);
+        display: flex;
+        padding: 13.333px 11.667px;
+        justify-content: center;
+        align-items: center;
+        gap: 8.333px;
+        width: 105px;
+        color: var(--White, #fff);
+        text-align: center;
+        font-family: Inter;
+        font-size: 16.667px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        left: 495px;
+      }
+    }
+  }
+}

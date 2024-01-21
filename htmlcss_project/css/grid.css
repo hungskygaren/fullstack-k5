@@ -81,7 +81,7 @@ Nếu class không có breakpoint -> Màn hình nhỏ nhất
   max-width: 100%;
 }
 
-@media screen and (min-width: 576pxpx) {
+@media screen and (min-width: 576px) {
   .col-sm-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;
@@ -131,7 +131,7 @@ Nếu class không có breakpoint -> Màn hình nhỏ nhất
     max-width: 100%;
   }
 }
-@media screen and (min-width: 768pxpx) {
+@media screen and (min-width: 768px) {
   .col-md-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;

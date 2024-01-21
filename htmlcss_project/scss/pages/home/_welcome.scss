@@ -1,0 +1,98 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+
+  .container {
+    width: 100%;
+  }
+  .welcome-inside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .text-introduce {
+      width: 86%;
+      height: 275.833px;
+      position: relative;
+      left: 0;
+      top: 18rem;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      h2 {
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 36.667px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 131.523%; /* 48.225px */
+      }
+      span {
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 43.333px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+      }
+      p {
+        color: var(--Content, #2c2c2c);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.417px; /* 127.604% */
+      }
+    }
+    .background {
+      width: 47%;
+      height: 708.333px;
+      position: absolute;
+      right: 0;
+      border-radius: 16.667px 0px 0px 16.667px;
+      background: var(--green-200, #dcffca);
+    }
+    .img-chop {
+      position: absolute;
+      z-index: 1;
+      left: 62rem;
+      top: 8rem;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 719.029px;
+      }
+    }
+    .text-chop {
+      width: 47%;
+      transform: rotate(90deg);
+      color: var(--green-1000, #216000);
+      font-family: Inter;
+      font-size: 166.667px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%; /* 166.667px */
+      opacity: 0.15;
+      position: absolute;
+      z-index: 1;
+      right: -20rem;
+      top: 35rem;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .img-chop {
+    display: none;
+    img {
+      display: none;
+    }
+  }
+  .text-chop {
+    display: none;
+  }
+  .background {
+    display: none;
+  }
+}
