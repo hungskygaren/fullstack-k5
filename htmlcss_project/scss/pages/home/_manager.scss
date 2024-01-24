@@ -2,9 +2,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  .container {
+    width: 100%;
+  }
   .manager-inside {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
     .manager-title {
       text-align: center;
       display: flex;
@@ -38,7 +43,7 @@
       padding-left: 82.5px;
       padding-right: 82.5px;
       display: flex;
-
+      align-items: center;
       justify-content: space-between;
       gap: 50px;
       position: relative;
@@ -55,7 +60,7 @@
         z-index: -1;
       }
       .trust {
-        width: 294.167px;
+        width: 95%;
         height: 337.5px;
 
         border-radius: 3.333px;
@@ -78,7 +83,7 @@
         }
 
         span {
-          width: 275px;
+          width: 89%;
           color: var(--Content, #2c2c2c);
           font-family: Inter;
           font-size: 43.333px;
@@ -95,7 +100,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: 30.833px; /* 154.167% */
-          width: 274.167px;
+          width: 89%;
           margin-left: 33px;
           padding-right: 38px;
         }
@@ -104,7 +109,7 @@
         border-radius: 3.333px;
         background: var(--white, #08c781);
         box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
-        width: 342.5px;
+        width: 111%;
         height: 392.5px;
         display: flex;
         flex-direction: column;
@@ -122,7 +127,7 @@
         }
 
         span {
-          width: 275px;
+          width: 89%;
           color: var(--Content, #2c2c2c);
           font-family: Inter;
           font-size: 43.333px;
@@ -139,7 +144,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: 30.833px; /* 154.167% */
-          width: 274.167px;
+          width: 89%;
           margin-left: 33px;
           padding-right: 15px;
         }
@@ -149,11 +154,12 @@
         border-radius: 3.333px;
         background: var(--white, #000fdc);
         box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
-        width: 294.167px;
+        width: 95%;
         height: 337.5px;
         display: flex;
         flex-direction: column;
         gap: 24px;
+        margin-left: 45px;
         .trust-bg-logo {
           border-radius: 10px;
           background: var(--orange-100, #fff0e7);
@@ -167,7 +173,7 @@
         }
 
         span {
-          width: 275px;
+          width: 89%;
           color: var(--Content, #2c2c2c);
           font-family: Inter;
           font-size: 43.333px;
@@ -184,7 +190,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: 30.833px; /* 154.167% */
-          width: 274.167px;
+          width: 89%;
           margin-left: 33px;
 
           padding-right: 38px;
@@ -195,10 +201,104 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .manager {
+    .manager-inside {
+      .achievement {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
   .ellipse-6 {
     display: none;
   }
   .ellipse-5 {
     display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .manager {
+    .manager-inside {
+      .manager-title {
+        h2 {
+          font-size: 300%;
+          padding: 0 100px;
+        }
+        p {
+          font-size: 150%;
+          padding: 0 100px;
+        }
+      }
+      .achievement {
+        display: flex;
+        margin-right: 0px;
+        align-items: center;
+        .trust {
+          span {
+            font-size: 23px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .coverage {
+          margin-left: 0;
+          span {
+            font-size: 23px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .service {
+          margin-left: -20px;
+          span {
+            font-size: 20px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .manager {
+    .manager-inside {
+      .achievement {
+        display: flex;
+        margin-right: 0px;
+        align-items: center;
+        flex-direction: column;
+        .trust {
+          span {
+            font-size: 43px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        .coverage {
+          margin-left: 0;
+          span {
+            font-size: 43px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        .service {
+          width: 85%;
+          margin-left: 28px;
+          span {
+            font-size: 43px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
   }
 }

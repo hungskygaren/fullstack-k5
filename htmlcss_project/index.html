@@ -23,27 +23,32 @@
     <header class="navbar">
       <div class="container">
         <div class="row">
+          <input type="checkbox" id="checkbox" hidden />
           <div class="navbar-inside">
-            <div class="col-xxl-2 col-xl-2">
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2">
               <div class="logo">
                 <img src="./images/logo/logo.png" alt="" />
               </div>
             </div>
-            <div class="col-xxl-10 col-xl-10">
+            <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10">
               <div class="menu">
-                <a class="item" href="">Trang chủ</a>
-                <a class="item" href="">Về Greenchop</a>
-                <a class="item" href="">Sản phẩm</a>
-                <a class="item" href="">Tin tức</a>
-                <a class="item" href="">Liên hệ</a>
+                <div class="item-1">
+                  <a class="item" href="">Trang chủ</a>
+                  <a class="item" href="">Về Greenchop</a>
+                  <a class="item" href="">Sản phẩm</a>
+                  <a class="item" href="">Tin tức</a>
+                  <a class="item" href="">Liên hệ</a>
+                </div>
                 <a class="item cart-link" href=""
                   ><img src="./images/icons/cart.svg" alt="" />
                   <p class="cart-number">3</p></a
                 >
 
-                <a class="item" href=""
+                <a class="items" href=""
                   ><img src="./images/icons/search.svg" alt=""
                 /></a>
+
+                <label for="checkbox" class="fa-solid fa-bars tbars"></label>
               </div>
             </div>
           </div>
@@ -54,7 +59,7 @@
       <div class="container">
         <div class="row">
           <div class="welcome-inside">
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
               <div class="text-introduce">
                 <h2>GreenChop: Tiện gấp dễ gắp</h2>
                 <span>AN TOÀN HƠN GIỮA MÙA COVID</span>
@@ -68,7 +73,7 @@
               </div>
             </div>
 
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
               <div class="img-chop">
                 <img src="./images/hero-image.png" alt="" />
               </div>
@@ -83,70 +88,74 @@
       <div class="container">
         <div class="row">
           <div class="manager-inside">
-            <div class="manager-title">
-              <h2>GreenChop: Giữ an toàn trong từng bữa ăn của người Việt</h2>
-              <p>
-                Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng
-                ý tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu
-                trong mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán
-                ăn...
-              </p>
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-10 col-sm-12">
+              <div class="manager-title">
+                <h2>GreenChop: Giữ an toàn trong từng bữa ăn của người Việt</h2>
+                <p>
+                  Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng
+                  cùng ý tưởng đột phá, GreenChop đã trở thành sản phẩm không
+                  thể thiếu trong mọi bữa ăn mùa dịch tại các nhà hàng, khách
+                  sạn, quán ăn...
+                </p>
+              </div>
             </div>
-            <div class="achievement">
-              <span class="ellipse-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="235"
-                  height="236"
-                  viewBox="0 0 235 236"
-                  fill="none"
-                >
-                  <circle
-                    cx="117.5"
-                    cy="117.75"
-                    r="117.5"
-                    fill="var(--green-200, #dcffca)"
-                  />
-                </svg>
-              </span>
-              <div class="col-xxl-4">
-                <div class="trust">
-                  <div class="trust-bg-logo">
-                    <img src="./images/icons/quality-white.svg" alt="" />
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-10 col-sm-12">
+              <div class="achievement">
+                <span class="ellipse-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="235"
+                    height="236"
+                    viewBox="0 0 235 236"
+                    fill="none"
+                  >
+                    <circle
+                      cx="117.5"
+                      cy="117.75"
+                      r="117.5"
+                      fill="var(--green-200, #dcffca)"
+                    />
+                  </svg>
+                </span>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="trust">
+                    <div class="trust-bg-logo">
+                      <img src="./images/icons/quality-white.svg" alt="" />
+                    </div>
+                    <span>1000+</span>
+                    <p>Hộ gia đình tin dùng GreenChop</p>
                   </div>
-                  <span>1000+</span>
-                  <p>Hộ gia đình tin dùng GreenChop</p>
                 </div>
-              </div>
-              <div class="col-xxl-4">
-                <div class="service">
-                  <div class="service-bg-logo">
-                    <img src="./images/icons/quality-white.svg" alt="" />
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="service">
+                    <div class="service-bg-logo">
+                      <img src="./images/icons/quality-white.svg" alt="" />
+                    </div>
+                    <span>600+</span>
+                    <p>Nhà hàng đã phục vụ GreenChop cho thực khách</p>
                   </div>
-                  <span>600+</span>
-                  <p>Nhà hàng đã phục vụ GreenChop cho thực khách</p>
                 </div>
-              </div>
-              <div class="col-xxl-4 col-xl-4">
-                <div class="coverage">
-                  <div class="trust-bg-logo">
-                    <img src="./images/icons/quality-white.svg" alt="" />
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="coverage">
+                    <div class="trust-bg-logo">
+                      <img src="./images/icons/quality-white.svg" alt="" />
+                    </div>
+                    <span>20+</span>
+                    <p>Tỉnh thành được GreenChop phủ sóng</p>
                   </div>
-                  <span>20+</span>
-                  <p>Tỉnh thành được GreenChop phủ sóng</p>
                 </div>
+                <span class="ellipse-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="235"
+                    height="236"
+                    viewBox="0 0 235 236"
+                    fill="none"
+                  >
+                    <circle cx="117.5" cy="117.75" r="117.5" fill="#FFD5BD" />
+                  </svg>
+                </span>
               </div>
-              <span class="ellipse-6">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="235"
-                  height="236"
-                  viewBox="0 0 235 236"
-                  fill="none"
-                >
-                  <circle cx="117.5" cy="117.75" r="117.5" fill="#FFD5BD" />
-                </svg>
-              </span>
             </div>
           </div>
         </div>
@@ -158,7 +167,7 @@
           <div class="product-inside">
             <h3>Sản phẩm</h3>
             <div class="product-box">
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="product-item">
                   <span class="ellipse-7">
                     <img src="./images/icons/Ellipse 7.svg" alt=""
@@ -177,7 +186,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="product-item">
                   <span class="ellipse-7">
                     <img src="./images/icons/Ellipse 8.svg" alt=""
@@ -199,7 +208,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="product-item">
                   <span class="ellipse-7">
                     <img src="./images/icons/Ellipse 7.svg" alt=""
@@ -222,7 +231,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="product-item">
                   <span class="ellipse-7">
                     <img src="./images/icons/Ellipse 7.svg" alt=""
@@ -244,7 +253,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="product-item">
                   <span class="ellipse-7">
                     <img src="./images/icons/Ellipse 8.svg" alt=""
@@ -266,7 +275,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="product-item">
                   <span class="ellipse-7">
                     <img src="./images/icons/Ellipse 7.svg" alt=""
@@ -302,14 +311,14 @@
               adipiscing
             </p>
             <div class="news-box">
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div class="news-item">
                   <img src="./images/news1.jpg" alt="" />
                   <div class="calendar">
                     <p>Lorem ipsum</p>
                     <span
                       ><img src="./images/icons/calendar.svg" alt="" />
-                      <p>28 - 10-2021</p></span
+                      <p><nobr>28-10-2021</nobr></p></span
                     >
                   </div>
                   <h4>
@@ -322,14 +331,14 @@
                   </p>
                 </div>
               </div>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div class="news-item">
                   <img src="./images/news2.jpg" alt="" />
                   <div class="calendar">
                     <p>Lorem ipsum</p>
                     <span
                       ><img src="./images/icons/calendar.svg" alt="" />
-                      <p>28 - 10-2021</p></span
+                      <p><nobr>28-10-2021</nobr></p></span
                     >
                   </div>
                   <h4>
@@ -343,7 +352,7 @@
                 </div>
               </div>
               <div
-                class="col-xxl-4 col-xl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4"
+                class="col-xxl-4 col-xl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12"
               >
                 <div class="news-item">
                   <img src="./images/news3.jpg" alt="" />
@@ -351,7 +360,7 @@
                     <p>Lorem ipsum</p>
                     <span
                       ><img src="./images/icons/calendar.svg" alt="" />
-                      <p>28 - 10-2021</p></span
+                      <p><nobr>28-10-2021</nobr></p></span
                     >
                   </div>
                   <h4>
@@ -386,16 +395,16 @@
     <section class="protect">
       <div class="container">
         <div class="row">
-          <div class="col-xxl-12">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
             <div class="protect-inside">
               <h2>GreenChop bảo vệ người dùng như thế nào?</h2>
               <p>
                 Mỗi đôi đũa GreenChop gồm 2 phần thân đũa và đầu đũa. Người dùng
                 có thể dễ dàng tách rời hoặc gắn liền 2 phần này với nhau
               </p>
-              <div class="col-xxl-12">
+              <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="feature">
-                  <div class="col-xxl-4">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="feature-items">
                       <img src="./images/info1.jpg" alt="" />
                       <div class="description">
@@ -408,7 +417,7 @@
                     </div>
                   </div>
 
-                  <div class="col-xxl-4">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="feature-items">
                       <img src="./images/info2.jpg" alt="" />
                       <div class="description">
@@ -422,7 +431,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xxl-4">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="feature-items">
                       <img src="./images/info3.jpg" alt="" />
                       <div class="description">

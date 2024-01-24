@@ -16,10 +16,10 @@
 @import "pages/home/products";
 @import "pages/home/news";
 @import "pages/home/protect";
-@import "pages/home/outstand";
-@import "pages/home/contact";
-@import "pages/home/footer";
-@import "pages/home/posts";
+// @import "pages/home/outstand";
+// @import "pages/home/contact";
+// @import "pages/home/footer";
+// @import "pages/home/posts";
 
 //2. About
 @import "pages/about/about";
@@ -41,6 +41,7 @@ body {
   .container {
     width: 100%;
   }
+
   .navbar-inside {
     display: flex;
     align-items: center;
@@ -55,7 +56,12 @@ body {
       display: inline-flex;
       align-items: center;
       gap: 50px;
-      padding-left: 200px;
+      padding-left: 20%;
+      .item-1 {
+        display: inline-flex;
+        align-items: center;
+        gap: 50px;
+      }
       .item {
         color: var(--content, #2c2c2c);
         font-family: Inter;
@@ -63,6 +69,10 @@ body {
         font-style: normal;
         font-weight: 600;
         line-height: 21.667px; /* 130% */
+      }
+      .tbars {
+        display: none;
+        font-size: 130%;
       }
       .cart-link {
         position: relative;
@@ -80,6 +90,7 @@ body {
           top: -0.3rem;
           left: 2rem;
         }
+
         p {
           color: var(--white, #fff);
           font-family: Inter;
@@ -95,5 +106,71 @@ body {
     }
   }
 }
-@media screen and (min-width: 992px) {
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    .navbar-inside {
+      .menu {
+        padding-left: 5%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    #checkbox:checked ~ .navbar-inside .item-1 {
+      transform: translateY(0px);
+    }
+    .navbar-inside {
+      .menu {
+        padding-left: 70%;
+        .item-1 {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          background: #e05000;
+          top: 75px;
+          right: 0;
+          width: 100%;
+          transform: translateY(-400px);
+        }
+        .tbars {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    #checkbox:checked ~ .navbar-inside .item-1 {
+      transform: translateY(0px);
+    }
+    .navbar-inside {
+      .menu {
+        .cart-link {
+          display: none;
+        }
+        .items {
+          display: none;
+        }
+        .item-1 {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          background: #e05000;
+          top: 75px;
+          right: 0;
+          width: 100%;
+          transform: translateY(-400px);
+        }
+        .tbars {
+          display: block;
+          position: absolute;
+          right: 30px;
+        }
+      }
+    }
+  }
 }
