@@ -47,7 +47,7 @@
     }
     .feature {
       width: 100%;
-      height: 359.167px;
+
       flex-shrink: 0;
 
       display: flex;
@@ -111,8 +111,6 @@
     .protect-inside {
       .feature {
         flex-direction: column;
-        align-items: center;
-        width: 100%;
       }
     }
   }
