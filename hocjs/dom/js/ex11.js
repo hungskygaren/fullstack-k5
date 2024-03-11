@@ -25,6 +25,7 @@ carouselNextBtn.addEventListener("click", function () {
   translateX -= itemWidth;
   currentIndex++;
   carouselImages.style.transform = `translateX(${translateX}px)`;
+  updateActiveDot();
  
 });
 
@@ -36,6 +37,7 @@ carouselPrevBtn.addEventListener("click", function () {
   translateX += itemWidth;
   currentIndex--;
   carouselImages.style.transform = `translateX(${translateX}px)`;
+  updateActiveDot();
   
 });
 
