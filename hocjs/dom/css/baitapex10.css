@@ -1,0 +1,15 @@
+.menu {
+  width: 150px;
+  background-color: black;
+}
+.menu a {
+  color: aliceblue;
+  display: block;
+}
+.menu ul {
+  background-color: aqua;
+  display: none;
+}
+.menu ul.open {
+  display: block;
+}
