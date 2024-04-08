@@ -5,16 +5,13 @@ const SpeechGrammarList =
 const SpeechRecognitionEvent =
   window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
 
-// Tạo một thể hiện mới của SpeechRecognition
 const recognition = new SpeechRecognition();
 
-// Đặt một số thuộc tính cho việc nhận diện
 recognition.continuous = false;
-recognition.lang = "vi-VN"; // Sử dụng tiếng Việt
+recognition.lang = "vi-VN";
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
-// Bắt đầu nhận diện khi màn hình được nhấp vào
 const btn = document.querySelector(".btn");
 const result = document.querySelector(".result");
 const action = document.querySelector(".action");
@@ -29,11 +26,10 @@ function openWebsiteWithMessage(url, message) {
     window.open(url, "_blank");
   }, 1500);
 }
-// Xử lý sự kiện kết quả
+
 recognition.onresult = (event) => {
-  // Lấy chuỗi văn bản đã nhận diện được
   const text = event.results[0][0].transcript;
-  // Xử lý chuỗi văn bản để biết được người dùng vừa đọc gì
+
   console.log(`Kết quả nhận được: ${text}.`);
   result.textContent = text;
 
@@ -55,11 +51,9 @@ recognition.onresult = (event) => {
     text.toLowerCase().includes("video") ||
     text.toLowerCase().includes("xem video")
   ) {
-    // Tách từ khóa "video" để lấy phần còn lại của câu yêu cầu
     const videoKeywordIndex = text.toLowerCase().indexOf("video");
     const videoRequest = text.slice(videoKeywordIndex + 6).trim();
 
-    // Kiểm tra xem người dùng yêu cầu mở video nào
     switch (videoRequest) {
       case "ai chung tình được mãi":
         openWebsiteWithMessage(
@@ -76,11 +70,9 @@ recognition.onresult = (event) => {
     text.toLowerCase().includes("bài hát") ||
     text.toLowerCase().includes("nghe bài hát")
   ) {
-    // Tách từ khóa "video" để lấy phần còn lại của câu yêu cầu
     const videoKeywordIndex = text.toLowerCase().indexOf("bài hát");
     const videoRequest = text.slice(videoKeywordIndex + 8).trim();
 
-    // Kiểm tra xem người dùng yêu cầu mở video nào
     switch (videoRequest) {
       case "ai chung tình được mãi":
         openWebsiteWithMessage(
@@ -104,7 +96,6 @@ recognition.onresult = (event) => {
       .indexOf(locationKeyword.toLowerCase());
 
     if (startIndex !== -1) {
-      // Kiểm tra xem từ khóa có tồn tại trong chuỗi không
       const location = text.slice(startIndex).trim();
       switch (location.toLowerCase()) {
         case "vinhomes smart city tây mỗ":
@@ -124,7 +115,6 @@ recognition.onresult = (event) => {
   }
 };
 
-// Dừng nhận diện khi giọng nói kết thúc
 recognition.onspeechend = () => {
   recognition.stop();
 };
