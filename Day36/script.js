@@ -98,28 +98,28 @@ recognition.onresult = (event) => {
     text.toLowerCase().includes("tới") ||
     text.toLowerCase().includes("đường tới")
   ) {
-    // Tách từ khóa "video" để lấy phần còn lại của câu yêu cầu
-
-    const locationKeyword = "vinhomes smartcity tây mỗ";
+    const locationKeyword = "Vinhomes Smart city Tây Mỗ";
     const startIndex = text
       .toLowerCase()
       .indexOf(locationKeyword.toLowerCase());
+
     if (startIndex !== -1) {
       // Kiểm tra xem từ khóa có tồn tại trong chuỗi không
       const location = text.slice(startIndex).trim();
-    }
-    switch (location) {
-      case "Vinhomes Smartcity Tây Mỗ":
-        openWebsiteWithMessage(
-          "https://www.google.com/maps/place/Vinhomes+Smart+City+T%C3%A2y+M%E1%BB%97/@21.0046874,105.7412839,17z/data=!3m1!4b1!4m6!3m5!1s0x313453d4ead47a63:0x9af352cfc1f411a1!8m2!3d21.0046874!4d105.7412839!16s%2Fg%2F11kb0nm6zm?entry=ttu",
-          "Đang mở chỉ dẫn tới Vinhomes Smartcity Tây Mỗ..."
-        );
-        break;
+      switch (location.toLowerCase()) {
+        case "vinhomes smart city tây mỗ":
+          openWebsiteWithMessage(
+            "https://www.google.com/maps/place/Vinhomes+Smart+City+T%C3%A2y+M%E1%BB%97/@21.0046874,105.7412839,17z/data=!3m1!4b1!4m6!3m5!1s0x313453d4ead47a63:0x9af352cfc1f411a1!8m2!3d21.0046874!4d105.7412839!16s%2Fg%2F11kb0nm6zm?entry=ttu",
+            "Đang mở chỉ dẫn tới Vinhomes Smartcity Tây Mỗ..."
+          );
+          break;
 
-      default:
-        console.log("Không thực hiện yêu cầu");
+        default:
+          console.log("Không thực hiện yêu cầu");
+      }
     }
   } else {
+    action.textContent = "Chưa thực hiện được yêu cầu";
     console.log("Không thực hiện được yêu cầu");
   }
 };
