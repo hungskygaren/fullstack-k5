@@ -6,10 +6,10 @@ total = a+b+c;
 ++,--
 
 */
-// var a = 10;
-// a--;
-// --a;
-// console.log(a);
+var a = 10;
+a--;
+--a;
+console.log(a);
 
 // var count = 0;
 // var total = 10 + ++count;
