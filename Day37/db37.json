@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "name": "Apple1",
+      "is_done": false,
+      "id": 1
+    },
+    {
+      "name": "Banana",
+      "is_done": true,
+      "id": 2
+    },
+    {
+      "name": "watermelon",
+      "is_done": false,
+      "id": 3
+    }
+  ]
+}

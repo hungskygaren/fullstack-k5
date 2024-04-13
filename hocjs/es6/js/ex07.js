@@ -39,19 +39,26 @@ Công việc: cho thành đồng bộ
 2.Promise
 3.Async Await
 */
-// const getUser = () => {
-//   setTimeout((callback) => {
+// const getUser = (callback) => {
+//   setTimeout(() => {
 //     console.log("User Data");
 //     typeof callback === "function" && callback();
 //   }, 1000);
 // };
-// const showMessage = () => {
+// const showMessage = (callback) => {
 //   console.log("hiển thị thành công");
+//   setTimeout(() => {
+//     console.log("3");
+//     typeof callback === "function" && callback();
+//   }, 1000);
 // };
-
+// const show = () => {
+//   console.log("ket thuc");
+// };
 // getUser(() => {
 //   showMessage();
 // });
+
 /*
 Giải pháp: chuyển dữ liệu từ dạng nested callback --> chaining
 method1().method2().method3();
@@ -139,41 +146,42 @@ method1().method2().method3();
 //   });
 
 // --------
-const users = [
-  {
-    id: 1,
-    name: "user 1",
-    salary: 5000,
-  },
-  {
-    id: 2,
-    name: "user 1",
-    salary: 6000,
-  },
-  {
-    id: 3,
-    name: "user 1",
-    salary: 7000,
-  },
-  {
-    id: 4,
-    name: "user 1",
-    salary: 8000,
-  },
-];
-const getUsers = (userId) =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const user = users.find(({ id }) => id === userId);
-      resolve(user);
-    }, 1000);
-  });
-const arr = [1, 3, 4];
-for (let i = 0; i < arr.length; i++) {
-  getUsers(arr[i]).then((data) => {
-    console.log(data);
-  });
-}
+
+// const users = [
+//   {
+//     id: 1,
+//     name: "user 1",
+//     salary: 5000,
+//   },
+//   {
+//     id: 2,
+//     name: "user 1",
+//     salary: 6000,
+//   },
+//   {
+//     id: 3,
+//     name: "user 1",
+//     salary: 7000,
+//   },
+//   {
+//     id: 4,
+//     name: "user 1",
+//     salary: 8000,
+//   },
+// ];
+// const getUsers = (userId) =>
+//   new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const user = users.find(({ id }) => id === userId);
+//       resolve(user);
+//     }, 1000);
+//   });
+// const arr = [1, 3, 4];
+// for (let i = 0; i < arr.length; i++) {
+//   getUsers(arr[i]).then((data) => {
+//     console.log(data);
+//   });
+// }
 // Yêu cầu : tính tổng thua nhập các user trong mảng arr
 // Không dùng : async,await. Promise.all
 // let total = 0;
@@ -228,9 +236,9 @@ promise.all(): Triển khai qua 2 bước
 //     console.log(result);
 // });
 
-Promise.all(arr.map((userId) => getUsers(userId))).then((users) => {
-  const result = users.reduce((total, user) => {
-    return total + user.salary;
-  }, 0);
-  console.log(result);
-});
+// Promise.all(arr.map((userId) => getUsers(userId))).then((users) => {
+//   const result = users.reduce((total, user) => {
+//     return total + user.salary;
+//   }, 0);
+//   console.log(result);
+// });
